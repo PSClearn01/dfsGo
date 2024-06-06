@@ -10,7 +10,7 @@ type TCPTransport struct {
 	listener      net.Listener
 
 	mu    sync.RWMutex
-	peers map[net.Addr]Peer
+	peers map[net.Addr]peer
 }
 
 func NewTCPTransport(listenAddr string) *TCPTransport {
